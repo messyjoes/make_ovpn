@@ -170,5 +170,6 @@ def make_new_ovpn_file(ca_cert, ca_key, clientname, serial, commonoptspath, file
 
 
 if __name__ == "__main__":
+	username = sys.argv[1]
 	make_new_ovpn_file("ca.crt", "ca.key", "justasictest", 0x0C, "common.txt", "justastictest.ovpn")
 	print("Done")
